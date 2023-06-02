@@ -1,8 +1,18 @@
 ﻿using System;
 
-public class Class1
+public class Playlist
 {
-	public Class1()
-	{
-	}
+    public Playlist()
+    {
+
+        public void getPlaylist()
+        {
+            Playlist playlist = new Playlist();
+        }
+
+        public void setPlaylist(Playlist playlist)
+        {
+
+        }
+    }
 }

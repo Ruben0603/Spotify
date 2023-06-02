@@ -1,7 +1,19 @@
 ﻿using System;
 
-public class artist
-	public artist()
-	{
-	}
+public class Artist
+{
+    public Artist()
+    {
+
+
+        public void getArtist()
+        {
+            Artist artist = new Artist();
+        }
+
+        public void setArtist(Artist artist)
+        {
+
+        }
+    }
 }

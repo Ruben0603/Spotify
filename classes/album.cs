@@ -1,8 +1,8 @@
 ﻿using System;
 
-public class Class1
+public class Album
 {
-	public Class1()
+	public Album()
 	{
 	}
 }

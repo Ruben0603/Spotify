@@ -1,0 +1,5 @@
+C:\Users\moore\OneDrive\Documenten\C#\Csharp\Spotify\Spotify\obj\Debug\net6.0\Spotify.csproj.AssemblyReference.cache
+C:\Users\moore\OneDrive\Documenten\C#\Csharp\Spotify\Spotify\obj\Debug\net6.0\Spotify.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\moore\OneDrive\Documenten\C#\Csharp\Spotify\Spotify\obj\Debug\net6.0\Spotify.AssemblyInfoInputs.cache
+C:\Users\moore\OneDrive\Documenten\C#\Csharp\Spotify\Spotify\obj\Debug\net6.0\Spotify.AssemblyInfo.cs
+C:\Users\moore\OneDrive\Documenten\C#\Csharp\Spotify\Spotify\obj\Debug\net6.0\Spotify.csproj.CoreCompileInputs.cache
