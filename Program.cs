@@ -14,6 +14,14 @@
                 case  1:
 
                     Playlist playlist = playlist.createPlaylist();
+
+                    Console.WriteLine("Give a name to your playlist");
+                    string userPlaylistName = Console.ReadLine();
+
+                    List<Playlist> playlistName  = new List<Playlist>();
+
+                    Console.WriteLine("What artist do you like to add songs from?");
+                    string ArtistName = Console.ReadLine();
                     break;
 
 

@@ -2,9 +2,11 @@
 
 public class Artist
 {
+    public string Title { get; set; }
+    public List<string> Artists { get; set; }
+    public List<Song> Songs { get; set; }
 
-    public string artistID { get; set; }
-    public string artistName { get; set; }
+
     public Artist()
     {
 
@@ -12,33 +14,35 @@ public class Artist
     }
     public void getArtist()
     {
-        return artistID;
+        return artistName;
     }
 
     public void setArtist(Artist artist)
     {
-        artist = artistName;
+        this.artistName = artistName;
     }
 
     public void artistLists(string artistID,string artistName)
     {
-        List<Artist> NF = new List<Artist>();
+        List<Album> NF = new List<Album>();
         NF.Add(artistID = 1);
         NF.Add(artistName = "NF");
         NF.Add("HOPE");
         NF.Add("The Search");
 
-        List<Artist> Eminem = new List<Artist>();
+        List<Album> Eminem = new List<Album>();
         Eminem.Add(artistID = 2);
         Eminem.Add(artistName = "Eminem");
         Eminem.Add("When I'm Gone");
         Eminem.Add("Curtain Call");
 
-        List<Artist> JackHarlow = new List<Artist>();
+        List<Album> JackHarlow = new List<Album>();
         JackHarlow.Add(artistID = 3);
         JackHarlow.Add(artistName = "Jack Harlow");
         JackHarlow.Add("Jackman");
         JackHarlow.Add("Come Home The Kids Miss You");
+
+
     }  
 }
 

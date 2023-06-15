@@ -2,13 +2,13 @@
 
 public class Playlist
 {
-    public string PlaylistId { get; set; }  
-    public string PlaylistName { get; set; }   
+    public string Name { get; set; }
+    public User Owner { get; set; }
+    public List<object> Songs { get; set; }
 
     public Playlist()
     {
-        createPlaylist();
-    }
+    }                         
 
     public void getPlaylist()
     {
@@ -20,21 +20,9 @@ public class Playlist
         null;
     }
 
-    public string createPlaylist()
-    {
-        Console.WriteLine("Give a name to your playlist");
-        string playlistName = Console.ReadLine();
+    //public string addSong()
+    //{
 
-        List<Playlist> playlistName = new List<Playlist>();
-
-        Console.WriteLine("What artsist do you like to add songs from?");
-        string ArtistName = Console.ReadLine();
-
-    }
-
-    public string addSong()
-    {
-
-    }
+    //}
 }
 // hier alle nummers en albums van artiesten opslaan
