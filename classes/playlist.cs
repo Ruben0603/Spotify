@@ -1,28 +1,22 @@
-﻿using System;
-
-public class Playlist
+﻿public class Playlist
 {
-    public string Name { get; set; }
-    public User Owner { get; set; }
-    public List<object> Songs { get; set; }
-
-    public Playlist()
+    public string name { get; set; }
+    public User user { get; set; }
+    public List<Song> songs { get; set; }
+    public Playlist(string _name, User user)
     {
-    }                         
-
-    public void getPlaylist()
-    {
-        Playlist playlist = new Playlist();
+        this.name = _name;
+        this.user = user;
+        this.songs = new List<Song>();
     }
 
-    public void setPlaylist(Playlist playlist)
+    public string getPlaylist()  // Funtion to return the playlist name 
     {
-        null;
+        return name;
     }
 
-    //public string addSong()
-    //{
-
-    //}
+    public void AddSongs(Song song)  // Funtion to add the song
+    {
+        songs.Add(song);
+    }
 }
-// hier alle nummers en albums van artiesten opslaan

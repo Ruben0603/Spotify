@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\moore\\OneDrive\\Documenten\\C#\\Csharp\\Spotify\\Spotify.csproj": {}
+    "C:\\Users\\moore\\OneDrive\\Documenten\\C#\\Csharp\\Spotify\\Spotify\\Spotify.csproj": {}
   },
   "projects": {
-    "C:\\Users\\moore\\OneDrive\\Documenten\\C#\\Csharp\\Spotify\\Spotify.csproj": {
+    "C:\\Users\\moore\\OneDrive\\Documenten\\C#\\Csharp\\Spotify\\Spotify\\Spotify.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\moore\\OneDrive\\Documenten\\C#\\Csharp\\Spotify\\Spotify.csproj",
+        "projectUniqueName": "C:\\Users\\moore\\OneDrive\\Documenten\\C#\\Csharp\\Spotify\\Spotify\\Spotify.csproj",
         "projectName": "Spotify",
-        "projectPath": "C:\\Users\\moore\\OneDrive\\Documenten\\C#\\Csharp\\Spotify\\Spotify.csproj",
+        "projectPath": "C:\\Users\\moore\\OneDrive\\Documenten\\C#\\Csharp\\Spotify\\Spotify\\Spotify.csproj",
         "packagesPath": "C:\\Users\\moore\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\moore\\OneDrive\\Documenten\\C#\\Csharp\\Spotify\\obj\\",
+        "outputPath": "C:\\Users\\moore\\OneDrive\\Documenten\\C#\\Csharp\\Spotify\\Spotify\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\moore\\AppData\\Roaming\\NuGet\\NuGet.Config",

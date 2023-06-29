@@ -1,63 +1,71 @@
-﻿using System;
-using System.IO.Pipes;
-
-public class Song
+﻿public class Song
 {
-    public string Title { get; set; }
-    public string Genre { get; set; }
-    public List<string> Artists { get; set; }
+    public int id { get; set; }
+    public string title { get; set; }
+    public string artist { get; set; }
+    public string genre { get; set; }
+    public string duration { get; set; }
 
-
-
-    public Song()
+    public Song(int _id, string _title, string _artist, string _genre, string _duration)
     {
-        
-        Artist artist = new Artist();
-
+        this.id = _id;
+        this.title = _title;
+        this.artist = _artist;
+        this.genre = _genre;
+        this.duration = _duration;
     }
 
-    public void getSong(string song)
+    public string getSong()  // Funtion to return the title
     {
-        this.title = title;
-    }
-    public void PlayPause(string title)
-    {
-        Console.WriteLine("The song " + title + " by " + artist + " is playing");
-        Thread.Sleep(1000);
-
-        bool y = true;
-        bool n = false;
-
-        Console.WriteLine("Play this song(y/n)?");
-        Console.ReadLine();
-        if (y)
-        {
-            Console.WriteLine("Song is playing");
-        }
-        if (n)
-        {
-            Console.WriteLine("Song is paused");
-        }
+        return title;
     }
 
-    public void Shuffle()
+    public void ShuffleNextPause()  // Option menu for the functions
     {
-        Console.WriteLine("Do you want to shuffle?(y/n)");
-        bool y = true;
-        bool n = false;
-        if (y)
+        Console.WriteLine("1: Pause");
+        Console.WriteLine("2: Next");
+        Console.WriteLine("3: Shuffle");
+        int option = Convert.ToInt32(Console.ReadLine());
+
+        switch (option)
         {
-            Random random = new Random();
-            for (int j = 0; j < 4; j++)
-            {
-                Console.WriteLine(random.Next());
-                Console.WriteLine("Shuffle mode on");
-            }
+            case 1:
+
+                Pause(); // Calls the funtion Pause
+
+                break;
+
+            case 2:
+
+                Next(); // Calls the funtion Next
+
+                break;
+
+            case 3:
+
+                Shuffle();  // Calls the funtion Shuffle
+
+                break;
         }
-        if (n)
+    }
+
+    public void Pause()  // Pauses song
+    {
+        Console.WriteLine("Song paused");
+    }
+
+    public void Next() // Plays next song
+    {
+        Console.WriteLine("Next song " + title + " is playing");
+    }
+
+    public void Shuffle() // Makes the songs shuffle the order
+    {
+        Random random = new Random();
+
+        for (int j = 0; j < 1; j++)
         {
-            Console.WriteLine("Shuffle mode off");
+            Console.WriteLine("Shuffle mode on");
         }
     }
 }
-// hier alle losse songs

@@ -1,49 +1,30 @@
-﻿using System;
-
-public class Artist
+﻿public class Artist
 {
-    public string Title { get; set; }
-    public List<string> Artists { get; set; }
-    public List<Song> Songs { get; set; }
+    public int id { get; set; }
+    public string name { get; set; }
+    public string song { get; set; }
+    public string album { get; set; }
 
-
-    public Artist()
+    public Artist(int id, string _name, string _song, string _album)
     {
-
-
-    }
-    public void getArtist()
-    {
-        return artistName;
+        this.id = id;
+        this.name = _name;
+        this.song = _song;
+        this.album = _album;
     }
 
-    public void setArtist(Artist artist)
+    public string getArtist()  // Funtion to return the artist name
     {
-        this.artistName = artistName;
+        return name;
     }
 
-    public void artistLists(string artistID,string artistName)
+    public string ShowSongs()  // Funtion to return the	songs
     {
-        List<Album> NF = new List<Album>();
-        NF.Add(artistID = 1);
-        NF.Add(artistName = "NF");
-        NF.Add("HOPE");
-        NF.Add("The Search");
+        return song;
+    }
+    public string ShowAlbums()	// Funtion to return the albums
+    {
+        return album;
+    }
 
-        List<Album> Eminem = new List<Album>();
-        Eminem.Add(artistID = 2);
-        Eminem.Add(artistName = "Eminem");
-        Eminem.Add("When I'm Gone");
-        Eminem.Add("Curtain Call");
-
-        List<Album> JackHarlow = new List<Album>();
-        JackHarlow.Add(artistID = 3);
-        JackHarlow.Add(artistName = "Jack Harlow");
-        JackHarlow.Add("Jackman");
-        JackHarlow.Add("Come Home The Kids Miss You");
-
-
-    }  
 }
-
-// hier alle artiesten hun albums met songs aanroepen

@@ -1,18 +1,17 @@
-﻿using System;
-
-public class Album
+﻿public class Album
 {
+    public int id { get; set; }
+    public string artist { get; set; }
+    public string title { get; set; }
 
-	public string Name { get; set; }
-    public string Song { get; set; }
-
-    List<Album> HOPE = new List<Album>();
-    List<Album> Eminem = new List<Album>();
-
-
-    public Album()
-	{
-
+    public Album(int _id, string _artist, string _title)
+    {
+        this.id = _id;
+        this.artist = _artist;
+        this.title = _title;
+    }
+    public string getAlbum()   // Funtion to return the album name
+    {
+        return title;
     }
 }
-// hier alle albums van artiesten met songs erin
